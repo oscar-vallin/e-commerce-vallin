@@ -1,8 +1,23 @@
-export const data = {
+const bcrypt = require('bcrypt');
+module.exports = () => data = {
+    user: [
+        {
+            name: 'dayana',
+            email: 'dayana@gmail.com',
+            password: bcrypt.hashSync('123456', 8),
+            isAdmin: true
+        },
+        {
+            name: 'karina',
+            email: 'karina@gmail.com',
+            password: bcrypt.hashSync('123456', 8),
+            isAdmin: false
+        }
+    ],
     products : [
         {
-            _id: 1,
-            name: "nike slim shirt",
+            name: "nike slim shirt uno",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -12,8 +27,8 @@ export const data = {
             description: 'high quality product'
         },
         {
-            _id: 2,
-            name: "nike slim shirt",
+            name: "nike slim shirt dos",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -23,8 +38,8 @@ export const data = {
             description: 'high quality product'
         },
         {
-            _id: 3,
-            name: "nike slim shirt",
+            name: "nike slim shirt tres",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -34,8 +49,8 @@ export const data = {
             description: 'high quality product'
         },
         {
-            _id: 4,
-            name: "nike slim shirt",
+            name: "nike slim shirt cuatro",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -45,8 +60,8 @@ export const data = {
             description: 'high quality product'
         },
         {
-            _id: 5,
-            name: "nike slim shirt",
+            name: "nike slim shirt cinco",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -56,8 +71,8 @@ export const data = {
             description: 'high quality product'
         },
         {
-            _id: 6,
-            name: "nike slim shirt",
+            name: "nike slim shirt seis",
+            category: 'fit',
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Nike',
@@ -69,6 +84,3 @@ export const data = {
     ]
 }
 
-export  const dataImg = {
-    image: '/images/p1.jpg'
-}
